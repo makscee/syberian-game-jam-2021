@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d253522436e93d4daf671afee2f94eb, type: 3}
+  m_Name: GlobalConfig
+  m_EditorClassIdentifier: 
+  paletteCircle: {r: 0.92156863, g: 0.34901962, b: 0.43137255, a: 1}
+  paletteTriangle: {r: 1, g: 0.8862745, b: 0.15294118, a: 1}
+  paletteSquare: {r: 0.3019608, g: 0.21568628, b: 0.3647059, a: 1}
+  paletteBg: {r: 0.07058824, g: 0.0627451, b: 0.07450981, a: 1}
+  fishSpeed: 0.7
+  foodSpeed: 1
