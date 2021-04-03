@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   food: {fileID: 1415311580311867341, guid: 283290d6401968d42b1fe1a5f7c1dea9, type: 3}
   routeObject: {fileID: 4898253154741370760, guid: fa4755fd62cec484297eec320eae2b79, type: 3}
+  spore: {fileID: 3212379194983585410, guid: 66cfbf40bea6fa948942ee0ba047b3b6, type: 3}
+  flower: {fileID: 5977355713965485559, guid: 51eb792ee11c83249a96ce44f78e54fe, type: 3}

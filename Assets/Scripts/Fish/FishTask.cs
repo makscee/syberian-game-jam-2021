@@ -10,6 +10,7 @@ public class FishTask
     public FishTaskType type;
     public Fish actor;
     public FoodStorage storage;
+    public CityCreator cityCreator;
 
     public FishTask(Fish actor, Transform targetObject, FishTaskType type, FoodStorage storage = null)
     {
@@ -37,11 +38,11 @@ public class FishTask
 
     public bool IsReached()
     {
-        return ((Vector2)actor.transform.position - target).magnitude < ReachedDistanceThreshold;
+        return targetObject == null || ((Vector2)actor.transform.position - target).magnitude < ReachedDistanceThreshold;
     }
 }
 
 public enum FishTaskType
 {
-    Move, TakeFood, DepositFood, EatFood
+    Move, TakeFood, DepositFood, EatFood, CreateCity
 }

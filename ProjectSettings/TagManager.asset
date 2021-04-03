@@ -16,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - CityStorageMask
   - 
   - 
   - 
@@ -43,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: CityMask
+    uniqueID: 2743221895
+    locked: 0
+  - name: FlowerMask
+    uniqueID: 2162760159
     locked: 0

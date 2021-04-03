@@ -5,7 +5,12 @@ using UnityEngine;
 public class GlobalConfig : ScriptableObject
 {
     public Color paletteCircle, paletteTriangle, paletteSquare, paletteBg;
-    public float fishSpeed, foodSpeed;
+    public float fishSpeed, foodSpeed, satiationDepletionRate;
+
+    public float flowerRegrowSpeed, flowerShellRegenDelay, flowerShellRegenSpeed, sporeCreateDelay;
+    public float sporeFlyMaxDistance, sporeFlySpeed;
+
+    public float cityCreatorSpeed, cityCreatorMaxDistance;
     
     public static GlobalConfig Instance => GetInstance();
 

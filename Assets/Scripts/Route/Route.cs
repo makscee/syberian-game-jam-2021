@@ -29,6 +29,11 @@ public class Route
         storagesOrder = storages;
     }
 
+    public bool Compare(FoodStorage[] storages)
+    {
+        return storages[0] == storagesOrder[0] && storages[1] == storagesOrder[1];
+    }
+
     public static Route Create(int workersAmount, FoodStorage[] storagesOrder)
     {
         var r = new Route(workersAmount, storagesOrder);
@@ -56,7 +61,6 @@ public class Route
             city = from.GetComponent<City>();
         }
 
-        Debug.Log($"{flower} {city}");
         if (flower != null && city != null)
         {
             city.AddFlowerRoute(flower);

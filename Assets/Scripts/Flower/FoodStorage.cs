@@ -5,12 +5,13 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class FoodStorage : MonoBehaviour
 {
+    public const int MaxResource = 100;
     public FishType type;
-    public int resource;
+    [SerializeField] int resource;
     [SerializeField] SpriteRenderer sr;
     [SerializeField] TextMeshProUGUI text;
 
-    public Action onResourceChange;
+    public Action<int> onResourceChange;
 
     void OnValidate()
     {
@@ -21,35 +22,38 @@ public class FoodStorage : MonoBehaviour
 
         if (text != null)
         {
-            // text.color = GlobalConfig.Instance.paletteBg;
-            text.color = Color.white;
+            text.color = GlobalConfig.Instance.paletteBg;
             text.text = resource.ToString();
         }
     }
+
+    public bool IsFull => resource >= MaxResource;
 
     public int Resource
     {
         get => resource;
         set
         {
+            value = Mathf.Min(MaxResource, value);
             if (resource == value) return;
+            var delta = value - resource;
             resource = value;
-            onResourceChange?.Invoke();
+            onResourceChange?.Invoke(delta);
             if (text != null)
                 text.text = value.ToString();
         }
     }
     
-    public Food TakeFood(Fish actor)
+    public bool TakeFood(Fish actor)
     {
         if (Resource == 0)
-            return null;
+            return false;
         Resource--;
         var food = Food.Create(type, actor.Position);
         food.AttachedTo = actor.gameObject;
         food.attachDistance = 0.1f;
         actor.carriedFood = food;
-        return food;
+        return true;
     }
 
     public void PutFood(Fish actor, Food food)

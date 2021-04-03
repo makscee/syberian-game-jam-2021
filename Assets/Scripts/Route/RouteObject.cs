@@ -27,7 +27,7 @@ public class RouteObject : MonoBehaviour
         
         var angle = Mathf.Atan2(vec.y, vec.x) * Mathf.Rad2Deg - 90;
         line.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        line.transform.localScale = new Vector3(.1f, vec.magnitude, 1);
+        line.transform.localScale = new Vector3(.1f, vec.magnitude - 1, 1);
     }
 
     SpriteRenderer _lineSr, _btnSr;

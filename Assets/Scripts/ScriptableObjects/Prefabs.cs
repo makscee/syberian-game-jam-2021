@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(fileName = "Prefabs", menuName = "ScriptableObjects/Prefabs")]
 public class Prefabs : ScriptableObject
 {
-    public GameObject food, routeObject;
+    public GameObject food, routeObject, spore, flower, fish, city, cityCreator;
 
     public static Prefabs Instance => GetInstance();
 

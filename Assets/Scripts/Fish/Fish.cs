@@ -1,14 +1,16 @@
 using System;
+using System.Linq;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class Fish : MonoBehaviour
 {
     public FishType type;
     public FishController controller;
     public FishTaskManager taskManager;
+    public Transform satiationCircle, outerCircle;
     public City city;
     public Food carriedFood;
+    public float satiation;
 
     Vector2 _position;
     public Vector2 Position
@@ -21,11 +23,48 @@ public class Fish : MonoBehaviour
         }
     }
 
-    void Awake()
+    public void EatFood()
     {
-        city = City.cities[(int) type];
+        if (carriedFood == null) return;
+        satiation += 0.5f;
+        carriedFood.Destroy();
+    }
+
+    void Start()
+    {
+        city = City.cities.Where(c => c.type == type).Aggregate((curMin, c) =>
+            curMin == null || CityDistance(c) < CityDistance(curMin) ? c : curMin);
+        city.FishMoveIn(this);
         _position = transform.position;
+        satiation = 1;
         InitColor();
+    }
+
+    void Update()
+    {
+        satiation -= GlobalConfig.Instance.satiationDepletionRate * Time.deltaTime;
+        SatiationCircleRefresh();
+        if (satiation < 0)
+        {
+            Die();
+        }
+    }
+
+    public Action<Fish> onDeath;
+    public void Die()
+    {
+        Destroy(gameObject);
+        onDeath?.Invoke(this);
+    }
+
+    void SatiationCircleRefresh()
+    {
+        satiationCircle.localScale = new Vector3(satiation, satiation);
+    }
+
+    float CityDistance(City c)
+    {
+        return ((Vector2) c.transform.position - _position).magnitude;
     }
 
     void InitColor()
@@ -38,5 +77,13 @@ public class Fish : MonoBehaviour
     void OnValidate()
     {
         InitColor();
+    }
+
+    public static Fish Create(Vector2 position, FishType type)
+    {
+        var f = Instantiate(Prefabs.Instance.fish, position, Quaternion.identity).GetComponent<Fish>();
+        f.type = type;
+        f.Position = position;
+        return f;
     }
 }

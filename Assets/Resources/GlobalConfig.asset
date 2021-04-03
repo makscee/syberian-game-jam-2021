@@ -18,3 +18,10 @@ MonoBehaviour:
   paletteBg: {r: 0.07058824, g: 0.0627451, b: 0.07450981, a: 1}
   fishSpeed: 0.7
   foodSpeed: 1
+  satiationDepletionRate: 0
+  flowerRegrowSpeed: 0.25
+  flowerShellRegenDelay: 15
+  flowerShellRegenSpeed: 1
+  sporeCreateDelay: 3
+  sporeFlyMaxDistance: 3
+  sporeFlySpeed: 0.3

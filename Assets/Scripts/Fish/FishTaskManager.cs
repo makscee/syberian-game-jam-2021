@@ -16,4 +16,9 @@ public class FishTaskManager : MonoBehaviour
             tasks.AddRange(fish.city.GetNewTask(fish));
         return tasks[0];
     }
+
+    public void ClearTasks()
+    {
+        tasks.Clear();
+    }
 }

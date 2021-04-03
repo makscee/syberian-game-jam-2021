@@ -7,6 +7,7 @@
         <e p="Scripts" t="Include">
           <e p="City" t="Include">
             <e p="City.cs" t="Include" />
+            <e p="CityCreator.cs" t="Include" />
           </e>
           <e p="Fish" t="Include">
             <e p="Fish.cs" t="Include" />
@@ -19,7 +20,9 @@
             <e p="Flower.cs" t="Include" />
             <e p="Food.cs" t="Include" />
             <e p="FoodStorage.cs" t="Include" />
+            <e p="Spore.cs" t="Include" />
           </e>
+          <e p="GameManager.cs" t="Include" />
           <e p="MouseInputHandler.cs" t="Include" />
           <e p="Route" t="Include">
             <e p="Route.cs" t="Include" />
