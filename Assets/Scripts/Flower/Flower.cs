@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
-using TMPro;
 using UnityEngine;
 
 public class Flower : MonoBehaviour
@@ -12,7 +10,6 @@ public class Flower : MonoBehaviour
     public float radius, capacity;
     public FoodStorage storage;
     public Transform outerShellMask, resourceCircle, capacityCircle;
-    [SerializeField] SpriteRenderer resourceSr, shellSr, capacitySr;
 
     void Start()
     {
@@ -53,17 +50,24 @@ public class Flower : MonoBehaviour
         }
     }
 
+    [SerializeField] bool _refresh;
     void OnValidate()
     {
-        RefreshRadius();
-        RefreshColors();
+        if (_refresh)
+        {
+            RefreshRadius();
+            RefreshColors();
+        }
     }
 
     void RefreshColors()
     {
-        resourceSr.color = GlobalConfig.Instance.GetColorByType(storage.type);
-        capacitySr.color = GlobalConfig.Instance.GetColorByType(storage.type).ChangeAlpha(capacitySr.color.a);
-        shellSr.color = GlobalConfig.Instance.GetColorByType(storage.type).ChangeAlpha(shellSr.color.a);
+        foreach (var spriteRenderer in GetComponentsInChildren<SpriteRenderer>())
+        {
+            spriteRenderer.color =
+                GlobalConfig.Instance.GetColorByType(storage.type).ChangeAlpha(spriteRenderer.color.a);
+            spriteRenderer.sprite = Prefabs.Instance.shapes[(int) storage.type];
+        }
     }
 
     public void CreateSpore()
@@ -96,6 +100,11 @@ public class Flower : MonoBehaviour
     {
         Destroy(gameObject);
         onDestroy?.Invoke(this);
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        
     }
 
     public static Flower Create(Vector2 position, FishType type)

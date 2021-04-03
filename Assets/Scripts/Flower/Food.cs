@@ -6,7 +6,6 @@ public class Food : MonoBehaviour
 {
     public FishType type;
     public SpriteRenderer sr;
-    public float attachDistance;
     public Vector2 velocity;
     GameObject _attachedTo;
     bool _isAttached;
@@ -26,7 +25,7 @@ public class Food : MonoBehaviour
         if (!_isAttached)
             return;
         var vec = _attachedTo.transform.position - transform.position;
-        if (vec.magnitude > attachDistance)
+        if (vec.magnitude > GlobalConfig.Instance.foodAttachDistance)
             velocity = vec.normalized;
         else velocity = Vector2.zero;
         transform.position += (Vector3)velocity * (Time.deltaTime * GlobalConfig.Instance.foodSpeed);

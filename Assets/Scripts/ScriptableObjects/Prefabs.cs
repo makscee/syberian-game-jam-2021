@@ -6,6 +6,8 @@ public class Prefabs : ScriptableObject
 {
     public GameObject food, routeObject, spore, flower, fish, city, cityCreator;
 
+    public Sprite[] shapes;
+
     public static Prefabs Instance => GetInstance();
 
     static Prefabs _instanceCache;

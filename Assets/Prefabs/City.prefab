@@ -173,8 +173,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279439378
-  m_fontColor: {r: 0.07058824, g: 0.0627451, b: 0.07450981, a: 1}
+    rgba: 4280804095
+  m_fontColor: {r: 1, g: 0.8862745, b: 0.15294118, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -325,7 +325,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8882585422139495391}
   - component: {fileID: 8882585422139495390}
-  - component: {fileID: 3601086078617990833}
   m_Layer: 0
   m_Name: Mask
   m_TagString: Untagged
@@ -396,57 +395,6 @@ SpriteMask:
   m_FrontSortingOrder: 5
   m_BackSortingOrder: 3
   m_IsCustomRangeActive: 1
-  m_SpriteSortPoint: 0
---- !u!212 &3601086078617990833
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8882585422139495388}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c0b184d6ab7359c4eb433cbef7fbf183, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.24705882}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8882585422153662504
 GameObject:
@@ -663,7 +611,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8882585422242922371}
   - component: {fileID: 8882585422242922370}
-  - component: {fileID: 4293747008858812526}
   m_Layer: 0
   m_Name: Mask
   m_TagString: Untagged
@@ -734,57 +681,6 @@ SpriteMask:
   m_FrontSortingOrder: 5
   m_BackSortingOrder: 3
   m_IsCustomRangeActive: 1
-  m_SpriteSortPoint: 0
---- !u!212 &4293747008858812526
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8882585422242922368}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c0b184d6ab7359c4eb433cbef7fbf183, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.24705882}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8882585422519238801
 GameObject:
@@ -1000,6 +896,7 @@ MonoBehaviour:
   resource: 0
   sr: {fileID: 8882585422153662507}
   text: {fileID: 8882585422900186300}
+  textColorByType: 1
 --- !u!1 &8882585422869232891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,8 +971,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279439378
-  m_fontColor: {r: 0.07058824, g: 0.0627451, b: 0.07450981, a: 1}
+    rgba: 4284299085
+  m_fontColor: {r: 0.3019608, g: 0.21568628, b: 0.3647059, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1307,8 +1204,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279439378
-  m_fontColor: {r: 0.07058824, g: 0.0627451, b: 0.07450981, a: 1}
+    rgba: 4285422059
+  m_fontColor: {r: 0.92156863, g: 0.34901962, b: 0.43137255, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1507,7 +1404,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8882585423271105732}
   - component: {fileID: 8882585423271105735}
-  - component: {fileID: 87387486787360955}
   m_Layer: 0
   m_Name: Mask
   m_TagString: Untagged
@@ -1579,57 +1475,6 @@ SpriteMask:
   m_BackSortingOrder: 3
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
---- !u!212 &87387486787360955
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8882585423271105733}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c0b184d6ab7359c4eb433cbef7fbf183, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.24705882}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &8882585423479372362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,6 +1525,7 @@ MonoBehaviour:
   resource: 0
   sr: {fileID: 8882585422519238800}
   text: {fileID: 8882585421946712232}
+  textColorByType: 1
 --- !u!1 &8882585423597811883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,3 +1576,4 @@ MonoBehaviour:
   resource: 0
   sr: {fileID: 8882585422702729974}
   text: {fileID: 8882585422869232890}
+  textColorByType: 1

@@ -44,9 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: CityMask
+  - name: City
     uniqueID: 2743221895
     locked: 0
-  - name: FlowerMask
+  - name: Flower
     uniqueID: 2162760159
+    locked: 0
+  - name: Fish
+    uniqueID: 2059491201
     locked: 0

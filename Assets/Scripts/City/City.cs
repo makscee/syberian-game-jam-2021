@@ -34,6 +34,7 @@ public class City : MonoBehaviour
         if (fishes.Count >= FoodStorage.MaxResource / 2 && _cityCreator == null)
         {
             _cityCreator = CityCreator.Create(this);
+            _cityCreator.whenDone += () => _cityCreator = null;
         }
     }
 

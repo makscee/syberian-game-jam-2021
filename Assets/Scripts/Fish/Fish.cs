@@ -7,7 +7,7 @@ public class Fish : MonoBehaviour
     public FishType type;
     public FishController controller;
     public FishTaskManager taskManager;
-    public Transform satiationCircle, outerCircle;
+    public Transform satiationCircle;
     public City city;
     public Food carriedFood;
     public float satiation;
@@ -53,6 +53,7 @@ public class Fish : MonoBehaviour
     public Action<Fish> onDeath;
     public void Die()
     {
+        if (carriedFood != null) carriedFood.Destroy();
         Destroy(gameObject);
         onDeath?.Invoke(this);
     }

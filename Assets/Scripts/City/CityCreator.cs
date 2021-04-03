@@ -28,6 +28,7 @@ public class CityCreator : MonoBehaviour
             CreateCity();
     }
 
+    public Action whenDone;
     void CreateCity()
     {
         var pos = transform.position;
@@ -36,6 +37,7 @@ public class CityCreator : MonoBehaviour
         //     flower.Destroy();
         Fish.Create(pos, c.type);
         Destroy(gameObject);
+        whenDone?.Invoke();
     }
 
     void OnTriggerEnter2D(Collider2D other)

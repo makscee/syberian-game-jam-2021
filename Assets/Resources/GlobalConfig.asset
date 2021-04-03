@@ -17,11 +17,14 @@ MonoBehaviour:
   paletteSquare: {r: 0.3019608, g: 0.21568628, b: 0.3647059, a: 1}
   paletteBg: {r: 0.07058824, g: 0.0627451, b: 0.07450981, a: 1}
   fishSpeed: 0.7
+  satiationDepletionRate: 0.01
+  foodAttachDistance: 0.3
   foodSpeed: 1
-  satiationDepletionRate: 0
-  flowerRegrowSpeed: 0.25
+  flowerRegrowSpeed: 0.3
   flowerShellRegenDelay: 15
   flowerShellRegenSpeed: 1
   sporeCreateDelay: 3
   sporeFlyMaxDistance: 3
   sporeFlySpeed: 0.3
+  cityCreatorSpeed: 0.2
+  cityCreatorMaxDistance: 6

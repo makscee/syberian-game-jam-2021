@@ -22,41 +22,57 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aceda6e3-16eb-413e-9f26-10e482de2084" name="Default Changelist" comment="day 1">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/City.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/City.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CityCreator.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CityCreator.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spore.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spore.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/City/CityCreator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/City/CityCreator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Flower/Spore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Flower/Spore.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
+    <list default="true" id="aceda6e3-16eb-413e-9f26-10e482de2084" name="Default Changelist" comment="day 2 (1/2) logic complete">
+      <change afterPath="$PROJECT_DIR$/Assets/Effects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Effects/Background.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Effects/Background.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Effects/BackgroundMaterial.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Effects/BackgroundMaterial.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animator.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animator/Animator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animator/Animator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animator/IUpdatable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animator/IUpdatable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animator/Interpolator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animator/Interpolator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animator/Invoker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Animator/Invoker.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MouseDragObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MouseDragObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rope.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rope.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineAsset_Renderer.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.syberian-game-jam-2021/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.syberian-game-jam-2021/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.syberian-game-jam-2021/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.syberian-game-jam-2021/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.syberian-game-jam-2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.syberian-game-jam-2021/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CircleCity.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CircleCity.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/City.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/City.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Flower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Flower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RouteObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RouteObject.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/GlobalConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GlobalConfig.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/City/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/City/City.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/City/CityCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/City/CityCreator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishTaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishTaskManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishType.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Flower/Flower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Flower/Flower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Flower/Food.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Flower/Food.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Flower/FoodStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Flower/FoodStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Route/Route.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Route/Route.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Route/RouteObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Route/RouteObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseInputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MouseInputHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MouseInputHandler.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/triangle_256x256.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/triangle_256x256.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,23 +97,29 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ClickTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ClickHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils/Utils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MouseInputHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Flower/Food.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flower/FlowerSpore.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Flower/Spore.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Route/Route.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Route/RouteObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Flower/Flower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/City/City.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishTask.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/City/CityCreator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Flower/FoodStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishTaskManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/BindMatrix.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/BindVisual.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/MouseBind.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/Bind.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flower/Food.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flower/FoodStorage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/City/CityCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/City/City.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Flower/Flower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rope.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MouseDragObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MouseInputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -149,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617358356472</updated>
-      <workItem from="1617358400479" duration="41234000" />
+      <workItem from="1617358400479" duration="53052000" />
     </task>
     <task id="LOCAL-00001" summary="day 1">
       <created>1617445437256</created>
@@ -158,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617445437256</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day 2 (1/2) logic complete">
+      <created>1617463559878</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617463559878</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +211,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="day 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 1" />
+    <MESSAGE value="day 2 (1/2) logic complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 2 (1/2) logic complete" />
   </component>
   <component name="WindowStateProjectService">
     <state width="2517" height="519" key="GridCell.Tab.0.bottom" timestamp="1617373946379">
@@ -253,17 +283,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1617359000246" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1617445440112">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1617463562955">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1617445440112" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1617463562955" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1617359423667">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1617359423667" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1617461316837">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1617478468084">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1617461316837" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1617478468084" />
   </component>
 </project>

@@ -16,3 +16,10 @@ MonoBehaviour:
   routeObject: {fileID: 4898253154741370760, guid: fa4755fd62cec484297eec320eae2b79, type: 3}
   spore: {fileID: 3212379194983585410, guid: 66cfbf40bea6fa948942ee0ba047b3b6, type: 3}
   flower: {fileID: 5977355713965485559, guid: 51eb792ee11c83249a96ce44f78e54fe, type: 3}
+  fish: {fileID: 8045605515637708923, guid: a48eba3ea635b684eb70b2c853e3aaeb, type: 3}
+  city: {fileID: 8882585422212533148, guid: a01f07b26f1caf04f8c0d9866ca38e75, type: 3}
+  cityCreator: {fileID: 2007649604710082569, guid: e879950f1adb2924088e25b967b9bc8c, type: 3}
+  shapes:
+  - {fileID: 21300000, guid: c0b184d6ab7359c4eb433cbef7fbf183, type: 3}
+  - {fileID: 21300000, guid: 444eccdba493a1b4cbb552b00c9a3d79, type: 3}
+  - {fileID: 21300000, guid: 88c48771d8f5d144f8f1bb59916befb0, type: 3}

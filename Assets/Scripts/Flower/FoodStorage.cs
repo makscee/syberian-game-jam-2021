@@ -10,6 +10,7 @@ public class FoodStorage : MonoBehaviour
     [SerializeField] int resource;
     [SerializeField] SpriteRenderer sr;
     [SerializeField] TextMeshProUGUI text;
+    [SerializeField] bool textColorByType;
 
     public Action<int> onResourceChange;
 
@@ -22,7 +23,7 @@ public class FoodStorage : MonoBehaviour
 
         if (text != null)
         {
-            text.color = GlobalConfig.Instance.paletteBg;
+            text.color = textColorByType ? GlobalConfig.Instance.GetColorByType(type) : GlobalConfig.Instance.paletteBg;
             text.text = resource.ToString();
         }
     }
@@ -51,7 +52,6 @@ public class FoodStorage : MonoBehaviour
         Resource--;
         var food = Food.Create(type, actor.Position);
         food.AttachedTo = actor.gameObject;
-        food.attachDistance = 0.1f;
         actor.carriedFood = food;
         return true;
     }
