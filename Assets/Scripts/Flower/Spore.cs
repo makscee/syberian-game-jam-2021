@@ -26,13 +26,13 @@ public class Spore : MonoBehaviour
 
     void Plant()
     {
-        Flower.Create(transform.position, flower.Type);
+        Flower.Create(transform.position, flower.Type, flower);
         Destroy(gameObject);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject == flower.gameObject) return;
+        if (flower != null && other.gameObject == flower.gameObject) return;
         _flyDirection = (transform.position - other.transform.position).normalized;
     }
 

@@ -93,6 +93,9 @@ public class MouseInputHandler : MonoBehaviour
             if (obj.CompareTag("Route"))
             {
                 obj.GetComponent<RouteObject>().route.WorkersAmount--;
+            } else if (obj.CompareTag("Flower"))
+            {
+                obj.GetComponent<Flower>().Destroy();
             }
         }
     }

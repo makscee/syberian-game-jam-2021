@@ -10,6 +10,9 @@ public class Flower : MonoBehaviour
     public float radius, capacity;
     public FoodStorage storage;
     public Transform outerShellMask, resourceCircle, capacityCircle;
+    public GameObject shellCircle;
+    public int remainingSpores = 1;
+    public Flower parent;
 
     void Start()
     {
@@ -30,7 +33,7 @@ public class Flower : MonoBehaviour
 
         if (storage.Resource == MaxStorage)
             _sinceFullyGrown += Time.deltaTime;
-        if (_sinceFullyGrown >= GlobalConfig.Instance.sporeCreateDelay) 
+        if (remainingSpores > 0 && _sinceFullyGrown >= GlobalConfig.Instance.sporeCreateDelay) 
             CreateSpore();
 
         if (shellPart == 1f && capacity < MaxStorage)
@@ -72,8 +75,14 @@ public class Flower : MonoBehaviour
 
     public void CreateSpore()
     {
+        remainingSpores--;
+        if (remainingSpores == 0)
+        {
+            shellCircle.SetActive(false);
+        }
         Spore.Create(this);
-        storage.Resource = 0;
+        storage.Resource = 1;
+        capacity /= 2;
     }
 
     void OnResourceChange(int delta)
@@ -84,6 +93,8 @@ public class Flower : MonoBehaviour
             _sinceLastTake = 0f;
             _sinceFullyGrown = 0f;
         }
+        if (storage.Resource == 0)
+            Destroy();
     }
 
     void RefreshRadius()
@@ -100,18 +111,18 @@ public class Flower : MonoBehaviour
     {
         Destroy(gameObject);
         onDestroy?.Invoke(this);
+        if (parent != null)
+        {
+            parent.remainingSpores++;
+        }
     }
 
-    void OnTriggerStay2D(Collider2D other)
-    {
-        
-    }
-
-    public static Flower Create(Vector2 position, FishType type)
+    public static Flower Create(Vector2 position, FishType type, Flower parent)
     {
         var flower = Instantiate(Prefabs.Instance.flower, position, Quaternion.identity).GetComponent<Flower>();
         flower.storage.type = type;
-        flower.storage.Resource = 0;
+        flower.storage.Resource = 1;
+        flower.parent = parent;
         return flower;
     }
 }

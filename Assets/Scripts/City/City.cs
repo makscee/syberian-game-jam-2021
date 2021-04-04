@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 // [ExecuteInEditMode]
@@ -12,6 +13,7 @@ public class City : MonoBehaviour
     public float radius;
     public SpriteRenderer sr;
     public FoodStorage[] storages = new FoodStorage[3];
+    [SerializeField] TextMeshProUGUI fishCountText;
     public HashSet<Route> routes = new HashSet<Route>();
     public HashSet<Fish> fishes = new HashSet<Fish>();
 
@@ -36,20 +38,23 @@ public class City : MonoBehaviour
             _cityCreator = CityCreator.Create(this);
             _cityCreator.whenDone += () => _cityCreator = null;
         }
+        fishCountText.text = fishes.Count.ToString();
     }
 
     void OnFishDeath(Fish f)
     {
         fishes.Remove(f);
+        fishCountText.text = fishes.Count.ToString();
         if (fishes.Count == 0)
             Destroy();
     }
 
     void OnOwnFoodChange(int delta)
     {
-        if (delta > 0 && OwnStorage.Resource >= fishes.Count * 2)
+        var t = GlobalConfig.Instance.fishCreationFoodRequirement;
+        if (delta > 0 && OwnStorage.Resource >= fishes.Count + t)
         {
-            OwnStorage.Resource -= fishes.Count;
+            OwnStorage.Resource -= t;
             Fish.Create(transform.position, type);
         }
     }
@@ -121,7 +126,14 @@ public class City : MonoBehaviour
         {
             if (fishRoute.WorkersAmount >= fishRoute.workers.Count)
             {
-                return fishRoute.GetTasks(fish);
+                var tasks = fishRoute.GetTasks(fish);
+                if (tasks == null)
+                {
+                    fishRoute.Destroy();
+                    return new [] {new FishTask(fish, transform, FishTaskType.Move)};
+                }
+
+                return tasks;
             }
             else
             {
@@ -135,7 +147,14 @@ public class City : MonoBehaviour
             if (vacantRoute != null)
             {
                 vacantRoute.AssignFish(fish);
-                return vacantRoute.GetTasks(fish);
+                var tasks = vacantRoute.GetTasks(fish);
+                if (tasks == null)
+                {
+                    vacantRoute.Destroy();
+                    return new [] {new FishTask(fish, transform, FishTaskType.Move)};
+                }
+
+                return tasks;
             }
         }
         return new [] {new FishTask(fish, transform, FishTaskType.Move)};

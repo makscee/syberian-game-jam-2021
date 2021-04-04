@@ -20,11 +20,12 @@ MonoBehaviour:
   satiationDepletionRate: 0.01
   foodAttachDistance: 0.3
   foodSpeed: 1
+  fishCreationFoodRequirement: 10
   flowerRegrowSpeed: 0.3
   flowerShellRegenDelay: 15
-  flowerShellRegenSpeed: 1
-  sporeCreateDelay: 3
-  sporeFlyMaxDistance: 3
+  flowerShellRegenSpeed: 0.2
+  sporeCreateDelay: 20
+  sporeFlyMaxDistance: 8
   sporeFlySpeed: 0.3
   cityCreatorSpeed: 0.2
-  cityCreatorMaxDistance: 6
+  cityCreatorMaxDistance: 10

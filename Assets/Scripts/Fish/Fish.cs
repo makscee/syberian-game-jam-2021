@@ -70,9 +70,12 @@ public class Fish : MonoBehaviour
 
     void InitColor()
     {
-        var color = GlobalConfig.Instance.GetColorByType(type);
+        var c = GlobalConfig.Instance.GetColorByType(type);
         foreach (var spriteRenderer in GetComponentsInChildren<SpriteRenderer>())
-            spriteRenderer.color = color;
+        {
+            spriteRenderer.color = c.ChangeAlpha(spriteRenderer.color.a);
+            spriteRenderer.sprite = Prefabs.Instance.shapes[(int) type];
+        }
     }
 
     void OnValidate()

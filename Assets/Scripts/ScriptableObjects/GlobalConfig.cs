@@ -7,6 +7,7 @@ public class GlobalConfig : ScriptableObject
     public Color paletteCircle, paletteTriangle, paletteSquare, paletteBg;
     public float fishSpeed, satiationDepletionRate;
     public float foodAttachDistance, foodSpeed;
+    public int fishCreationFoodRequirement;
 
     public float flowerRegrowSpeed, flowerShellRegenDelay, flowerShellRegenSpeed, sporeCreateDelay;
     public float sporeFlyMaxDistance, sporeFlySpeed;

@@ -30,7 +30,15 @@ public class Food : MonoBehaviour
         else velocity = Vector2.zero;
         transform.position += (Vector3)velocity * (Time.deltaTime * GlobalConfig.Instance.foodSpeed);
     }
-
+    void InitColor()
+    {
+        var c = GlobalConfig.Instance.GetColorByType(type);
+        foreach (var spriteRenderer in GetComponentsInChildren<SpriteRenderer>())
+        {
+            spriteRenderer.color = c.ChangeAlpha(spriteRenderer.color.a);
+            spriteRenderer.sprite = Prefabs.Instance.shapes[(int) type];
+        }
+    }
 
     public void Destroy()
     {
@@ -40,7 +48,7 @@ public class Food : MonoBehaviour
     {
         var f = Instantiate(Prefabs.Instance.food, position, Quaternion.identity).GetComponent<Food>();
         f.type = type;
-        f.sr.color = GlobalConfig.Instance.GetColorByType(type);
+        f.InitColor();
         return f;
     }
 }

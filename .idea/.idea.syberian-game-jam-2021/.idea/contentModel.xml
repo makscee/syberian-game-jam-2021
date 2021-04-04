@@ -11,6 +11,7 @@
             <e p="Invoker.cs" t="Include" />
             <e p="IUpdatable.cs" t="Include" />
           </e>
+          <e p="ArrowsMaterialPropertiesForwarder.cs" t="Include" />
           <e p="City" t="Include">
             <e p="City.cs" t="Include" />
             <e p="CityCreator.cs" t="Include" />

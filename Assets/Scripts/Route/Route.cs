@@ -81,6 +81,7 @@ public class Route
         var ind = 0;
         foreach (var foodStorage in storagesOrder)
         {
+            if (foodStorage == null) return null;
             tasks[ind] = new FishTask(fish, foodStorage.transform,
                 ind % 2 == 0 ? FishTaskType.TakeFood : FishTaskType.DepositFood, foodStorage);
             ind++;

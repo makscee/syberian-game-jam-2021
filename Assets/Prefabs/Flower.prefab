@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.1569035, z: 0}
   m_Children: []
   m_Father: {fileID: 6247125561258879285}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!331 &4622533450639508043
 SpriteMask:
@@ -149,9 +149,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1551745401
+  m_SortingLayer: 1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: c0b184d6ab7359c4eb433cbef7fbf183, type: 3}
   m_Color: {r: 0.92156863, g: 0.34901962, b: 0.43137255, a: 1}
   m_FlipX: 0
@@ -231,9 +231,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1551745401
+  m_SortingLayer: 1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: c0b184d6ab7359c4eb433cbef7fbf183, type: 3}
   m_Color: {r: 0.92156863, g: 0.34901962, b: 0.43137255, a: 1}
   m_FlipX: 0
@@ -313,9 +313,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1551745401
+  m_SortingLayer: 1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: c0b184d6ab7359c4eb433cbef7fbf183, type: 3}
   m_Color: {r: 0.92156863, g: 0.34901962, b: 0.43137255, a: 1}
   m_FlipX: 0
@@ -356,7 +356,6 @@ Transform:
   m_Children:
   - {fileID: 5977355713047852370}
   - {fileID: 6827766475078552154}
-  - {fileID: 8452396260919000439}
   - {fileID: 6899869910333157215}
   - {fileID: 2726269081864138090}
   - {fileID: 5977355714897989476}
@@ -637,6 +636,9 @@ MonoBehaviour:
   outerShellMask: {fileID: 2726269081864138090}
   resourceCircle: {fileID: 5977355713047852370}
   capacityCircle: {fileID: 6827766475078552154}
+  shellCircle: {fileID: 8162279087340579175}
+  remainingSpores: 1
+  parent: {fileID: 0}
   _refresh: 0
 --- !u!114 &5977355713965485556
 MonoBehaviour:
@@ -775,7 +777,7 @@ RectTransform:
   m_Children:
   - {fileID: 5977355712983447770}
   m_Father: {fileID: 6247125561258879285}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -924,36 +926,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &6407115233173024576
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8452396260919000439}
-  m_Layer: 0
-  m_Name: OuterShell
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8452396260919000439
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6407115233173024576}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6247125561258879285}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7755031055809003905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,9 +994,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1551745401
+  m_SortingLayer: 1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: c0b184d6ab7359c4eb433cbef7fbf183, type: 3}
   m_Color: {r: 0.92156863, g: 0.34901962, b: 0.43137255, a: 1}
   m_FlipX: 0
@@ -1065,7 +1037,7 @@ Transform:
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_Children: []
   m_Father: {fileID: 6247125561258879285}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1817865892305324788
 SpriteRenderer:

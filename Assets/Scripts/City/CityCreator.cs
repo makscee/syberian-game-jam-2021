@@ -42,6 +42,8 @@ public class CityCreator : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.CompareTag("Route"))
+            return;
         _flyDirection = (transform.position - other.transform.position).normalized;
     }
 
